@@ -1,0 +1,13 @@
+{
+	"path":"C:\\Windows\\Fonts\\arial.ttf",
+	"ranges":[
+		{
+			"start":" ",
+			"end":"0xFF"
+		},
+		{
+			"start":"←",
+			"end":"↙"
+		}
+	]
+}

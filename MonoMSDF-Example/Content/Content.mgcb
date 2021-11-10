@@ -1,0 +1,38 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:Windows
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:..\..\FontExtension.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin arial.json
+/importer:FieldFontImporter
+/processor:FieldFontProcessor
+/processorParam:ExternalPath=msdf-atlas-gen.exe
+/processorParam:Resolution=32
+/processorParam:Range=4
+/build:arial.json
+
+#begin FieldFontEffect.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:FieldFontEffect.fx
+
+#begin segoescript.json
+/importer:FieldFontImporter
+/processor:FieldFontProcessor
+/processorParam:ExternalPath=msdf-atlas-gen.exe
+/processorParam:Resolution=32
+/processorParam:Range=4
+/build:segoescript.json
+
