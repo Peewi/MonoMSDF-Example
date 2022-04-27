@@ -6,16 +6,13 @@ This is an example of my [text renderer for Monogame](https://github.com/Peewi/M
 
 # Files
 ## FontExtension.dll
-FontExtension.dll contains the content importer, content processor, text renderer and other classes used by these. It is referenced in both the .csproj and .mgcb files.
-
-## FieldFontEffect.fx
-FieldFontEffect.fx is the shader used to render the text. Add it to your content prject and load it with the content loader just like any other shader.
+FontExtension.dll comes from the nuget package. It has to be referenced manually in the .mgcb file. **Because nuget packages are stored in the user folder (by default), you will have to manually update this reference to build this project.**
 
 ## msdf-atlas-gen.exe
 msdf-atlas-gen.exe is used to generate the font atlas and layout information. It is available from the [msdf-atlas-gen releases page](https://github.com/Chlumsky/msdf-atlas-gen/releases). The path to msdf-atlas-gen.exe is set as a processor parameter for your font files. Or you can place it in your content folder and use the default path.
 
 ## Font files
-Fonts are specified with json files and should be added to the content project (mgcb file). Here is an example file:
+Fonts are specified files with the extension `.bhfont` that contain JSON and should be added to the content project (mgcb file). Here is an example file:
 ```
 {
 	"path":"C:\\Windows\\Fonts\\arial.ttf",
@@ -27,6 +24,10 @@ Fonts are specified with json files and should be added to the content project (
 		{
 			"start":"←",
 			"end":"↙"
+		},
+		{
+			"start":"0x2000",
+			"end":"0x200f"
 		}
 	]
 }

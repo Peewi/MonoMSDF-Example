@@ -10,29 +10,23 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\..\FontExtension.dll
+/reference:C:\Users\laurs\.nuget\packages\brackethouse.fontextension\2.0.0\lib\netcoreapp3.1\BracketHouse.FontExtension.dll
 
 #---------------------------------- Content ---------------------------------#
 
-#begin arial.json
+#begin arial.bhfont
 /importer:FieldFontImporter
 /processor:FieldFontProcessor
 /processorParam:ExternalPath=msdf-atlas-gen.exe
 /processorParam:Resolution=32
 /processorParam:Range=4
-/build:arial.json
+/build:arial.bhfont
 
-#begin FieldFontEffect.fx
-/importer:EffectImporter
-/processor:EffectProcessor
-/processorParam:DebugMode=Auto
-/build:FieldFontEffect.fx
-
-#begin segoescript.json
+#begin segoescript.bhfont
 /importer:FieldFontImporter
 /processor:FieldFontProcessor
 /processorParam:ExternalPath=msdf-atlas-gen.exe
 /processorParam:Resolution=32
 /processorParam:Range=4
-/build:segoescript.json
+/build:segoescript.bhfont
 
